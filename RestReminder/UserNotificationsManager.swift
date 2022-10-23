@@ -56,12 +56,13 @@ class UserNotificationManager: UserNotificationsManagerProtocol {
         
         
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: Double(secondsPurity), repeats: false)
-        
         let request = UNNotificationRequest(identifier: "a", content: content, trigger: trigger)
         
+        
+        
         notificationCenter.add(request)
-        
-        
+
+
         
     }
     
@@ -84,17 +85,16 @@ class UserNotificationManager: UserNotificationsManagerProtocol {
         
         let content = UNMutableNotificationContent()
         content.title = "Время отдыха подошло к концу"
-        content.body = "Следующий перерыв начнется через \(seconds / 60) минут(ы)"
+        content.body = "Следующий перерыв начнется через \(lengthMinute) минут(ы)"
         content.sound = UNNotificationSound.default
         
         
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: Double(seconds), repeats: true)
-        
-        let request = UNNotificationRequest(identifier: "b", content: content, trigger: trigger)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: Double(seconds), repeats: false)
+        let request = UNNotificationRequest(identifier: "c", content: content, trigger: trigger)
         
         notificationCenter.add(request)
         
-       
+      
     }
     
     

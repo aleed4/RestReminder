@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 
 protocol MainViewProtocol: AnyObject {
@@ -16,15 +17,21 @@ protocol MainViewPresenterProtocol: AnyObject {
     var view: MainViewProtocol? { get set }
     var userNotificationManager: UserNotificationsManagerProtocol { get set}
     init(view: MainViewProtocol)
-    func setupTap(lengthDate: Date, purityDate: Date)
-    func changeTap(lengthDate: Date, purityDate: Date)
-    func stopTap()
+    func preButtonsLogic(setupButton: UIButton, changeButton: UIButton, stopButton: UIButton)
+    func setupTapNotificationBehavior(lengthDate: Date, purityDate: Date)
+    func setupTapButtonsLogic(setupButton: UIButton, changeButton: UIButton, stopButton: UIButton)
+    func changeTapNotificationBehavior(lengthDate: Date, purityDate: Date)
+    func changeTapButtonsLogic(setupButton: UIButton, changeButton: UIButton, stopButton: UIButton)
+    func stopTapNotificationBehavior()
+    func stopTapButtonsLogic(setupButton: UIButton, changeButton: UIButton, stopButton: UIButton)
+    
 }
 
 
 class MainViewPresenter: MainViewPresenterProtocol {
     
     var userNotificationManager: UserNotificationsManagerProtocol = UserNotificationManager()
+    
     
     weak var view: MainViewProtocol?
     
@@ -33,20 +40,57 @@ class MainViewPresenter: MainViewPresenterProtocol {
         userNotificationManager.registerNotifications()
     }
     
-    func setupTap(lengthDate: Date, purityDate: Date) {
+    func preButtonsLogic(setupButton: UIButton, changeButton: UIButton, stopButton: UIButton) {
+        changeButton.isHidden = true
+        stopButton.isHidden = true
+    }
+    
+    
+    func setupTapNotificationBehavior(lengthDate: Date, purityDate: Date) {
         userNotificationManager.sendRestNotifications(lengthDate: lengthDate, purityDate: purityDate)
         userNotificationManager.sendEndRestNotifications(lengthDate: lengthDate, purityDate: purityDate)
     }
     
-    func changeTap(lengthDate: Date, purityDate: Date) {
+    func setupTapButtonsLogic(setupButton: UIButton, changeButton: UIButton, stopButton: UIButton) {
+
+        setupButton.isHidden = true
+        stopButton.isHidden = false
+        changeButton.isHidden = false
+    }
+    
+    
+    func changeTapNotificationBehavior(lengthDate: Date, purityDate: Date) {
         userNotificationManager.cancelNotification()
         userNotificationManager.sendRestNotifications(lengthDate: lengthDate, purityDate: purityDate)
         userNotificationManager.sendEndRestNotifications(lengthDate: lengthDate, purityDate: purityDate)
+        
+    }
+    func changeTapButtonsLogic(setupButton: UIButton, changeButton: UIButton, stopButton: UIButton) {
+        
+        DispatchQueue.main.async {
+            UIButton.animate(withDuration: 0.8, animations: {
+                changeButton.isEnabled = false
+                changeButton.setTitle("Изменено", for: .normal)
+                changeButton.titleLabel?.textColor = .white
+                changeButton.backgroundColor = UIColor(hue: 0.6194, saturation: 0.37, brightness: 1, alpha: 1.0)
+            }) { _ in
+                changeButton.isEnabled = true
+                changeButton.setTitle("Изменить", for: .normal)
+                changeButton.backgroundColor = UIColor(hue: 0.6194, saturation: 0.37, brightness: 0.88, alpha: 1.0)
+            }
+        }
+       
     }
     
-    func stopTap() {
+    
+    func stopTapNotificationBehavior() {
         userNotificationManager.cancelNotification()
     }
     
+    func stopTapButtonsLogic(setupButton: UIButton, changeButton: UIButton, stopButton: UIButton) {
+        stopButton.isHidden = true
+        setupButton.isHidden = false
+        changeButton.isHidden = true
+    }
     
 }

@@ -22,8 +22,9 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        changeButton.isHidden = true
-        stopButton.isHidden = true
+        presenter.preButtonsLogic(setupButton: setupButton, changeButton: changeButton, stopButton: stopButton)
+        
+
         
       
 //        notificationCenter.delegate = self
@@ -36,17 +37,21 @@ class MainViewController: UIViewController {
 
     @IBAction func changeAction(_ sender: Any) {
         
-        presenter.changeTap(lengthDate: lengthPicker.date, purityDate: purityPicker.date)
+        presenter.changeTapNotificationBehavior(lengthDate: lengthPicker.date, purityDate: purityPicker.date)
+        presenter.changeTapButtonsLogic(setupButton: setupButton, changeButton: changeButton, stopButton: stopButton)
+        
     }
     
     
     @IBAction func setupAction(_ sender: Any) {
-        presenter.setupTap(lengthDate: lengthPicker.date, purityDate: purityPicker.date)       
+        presenter.setupTapNotificationBehavior(lengthDate: lengthPicker.date, purityDate: purityPicker.date)
+        presenter.setupTapButtonsLogic(setupButton: setupButton, changeButton: changeButton, stopButton: stopButton)
     }
     
     
     @IBAction func stopAction(_ sender: Any) {
-        presenter.stopTap()
+        presenter.stopTapNotificationBehavior()
+        presenter.stopTapButtonsLogic(setupButton: setupButton, changeButton: changeButton, stopButton: stopButton)
     }
     
     
