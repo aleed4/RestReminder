@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		016730432904EC27003F9304 /* UserNotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016730422904EC27003F9304 /* UserNotificationsManager.swift */; };
 		0175721229033E6E0060041D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175721129033E6E0060041D /* AppDelegate.swift */; };
 		0175721429033E6E0060041D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175721329033E6E0060041D /* SceneDelegate.swift */; };
 		0175721929033E6E0060041D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0175721729033E6E0060041D /* Main.storyboard */; };
@@ -19,7 +20,7 @@
 		0175724A290460D10060041D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01757248290460D10060041D /* MainViewController.swift */; };
 		0175724D290461690060041D /* AsselderModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175724C290461690060041D /* AsselderModuleBuilder.swift */; };
 		01757254290490A70060041D /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01757253290490A70060041D /* MainViewController.xib */; };
-		01757256290493030060041D /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01757255290493030060041D /* MainPresenter.swift */; };
+		01757256290493030060041D /* MainViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01757255290493030060041D /* MainViewPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		016730422904EC27003F9304 /* UserNotificationsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotificationsManager.swift; sourceTree = "<group>"; };
 		0175720E29033E6E0060041D /* RestReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0175721129033E6E0060041D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0175721329033E6E0060041D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,7 +58,7 @@
 		01757248290460D10060041D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0175724C290461690060041D /* AsselderModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsselderModuleBuilder.swift; sourceTree = "<group>"; };
 		01757253290490A70060041D /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
-		01757255290493030060041D /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		01757255290493030060041D /* MainViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				0175721129033E6E0060041D /* AppDelegate.swift */,
 				0175721329033E6E0060041D /* SceneDelegate.swift */,
 				0175724C290461690060041D /* AsselderModuleBuilder.swift */,
+				016730422904EC27003F9304 /* UserNotificationsManager.swift */,
 				01757244290460000060041D /* MainModule */,
 				0175721729033E6E0060041D /* Main.storyboard */,
 				0175721D29033E700060041D /* Assets.xcassets */,
@@ -166,7 +169,7 @@
 		017572472904602A0060041D /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				01757255290493030060041D /* MainPresenter.swift */,
+				01757255290493030060041D /* MainViewPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -304,10 +307,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0175721C29033E6E0060041D /* RestReminder.xcdatamodeld in Sources */,
-				01757256290493030060041D /* MainPresenter.swift in Sources */,
+				01757256290493030060041D /* MainViewPresenter.swift in Sources */,
 				0175724D290461690060041D /* AsselderModuleBuilder.swift in Sources */,
 				0175721229033E6E0060041D /* AppDelegate.swift in Sources */,
 				0175721429033E6E0060041D /* SceneDelegate.swift in Sources */,
+				016730432904EC27003F9304 /* UserNotificationsManager.swift in Sources */,
 				0175724A290460D10060041D /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
