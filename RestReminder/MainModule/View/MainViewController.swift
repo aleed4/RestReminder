@@ -8,23 +8,33 @@
 import UIKit
 
 class MainViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var lengthPicker: UIDatePicker!
+    @IBOutlet weak var purityPicker: UIDatePicker!
+    
+    @IBOutlet weak var changeButton: UIButton!
+    @IBOutlet weak var setupButton: UIButton!
+    @IBOutlet weak var stopButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         // Do any additional setup after loading the view.
         //asd
     }
 
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func changeAction(_ sender: Any) {
     }
-    */
-
+    
+    
+    @IBAction func setupAction(_ sender: Any) {
+    }
+    
+    
+    @IBAction func stopAction(_ sender: Any) {
+    }
+    
 }

@@ -17,8 +17,9 @@
 		0175723629033E700060041D /* RestReminderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175723529033E700060041D /* RestReminderUITests.swift */; };
 		0175723829033E700060041D /* RestReminderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175723729033E700060041D /* RestReminderUITestsLaunchTests.swift */; };
 		0175724A290460D10060041D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01757248290460D10060041D /* MainViewController.swift */; };
-		0175724B290460D10060041D /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01757249290460D10060041D /* MainViewController.xib */; };
 		0175724D290461690060041D /* AsselderModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175724C290461690060041D /* AsselderModuleBuilder.swift */; };
+		01757254290490A70060041D /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01757253290490A70060041D /* MainViewController.xib */; };
+		01757256290493030060041D /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01757255290493030060041D /* MainPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +54,9 @@
 		0175723529033E700060041D /* RestReminderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestReminderUITests.swift; sourceTree = "<group>"; };
 		0175723729033E700060041D /* RestReminderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestReminderUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		01757248290460D10060041D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		01757249290460D10060041D /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		0175724C290461690060041D /* AsselderModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsselderModuleBuilder.swift; sourceTree = "<group>"; };
+		01757253290490A70060041D /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		01757255290493030060041D /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				01757248290460D10060041D /* MainViewController.swift */,
-				01757249290460D10060041D /* MainViewController.xib */,
+				01757253290490A70060041D /* MainViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -164,6 +166,7 @@
 		017572472904602A0060041D /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				01757255290493030060041D /* MainPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -275,7 +278,7 @@
 				0175722129033E700060041D /* LaunchScreen.storyboard in Resources */,
 				0175721E29033E700060041D /* Assets.xcassets in Resources */,
 				0175721929033E6E0060041D /* Main.storyboard in Resources */,
-				0175724B290460D10060041D /* MainViewController.xib in Resources */,
+				01757254290490A70060041D /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0175721C29033E6E0060041D /* RestReminder.xcdatamodeld in Sources */,
+				01757256290493030060041D /* MainPresenter.swift in Sources */,
 				0175724D290461690060041D /* AsselderModuleBuilder.swift in Sources */,
 				0175721229033E6E0060041D /* AppDelegate.swift in Sources */,
 				0175721429033E6E0060041D /* SceneDelegate.swift in Sources */,
@@ -484,8 +488,9 @@
 				DEVELOPMENT_TEAM = Y7FQ6Q427M;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RestReminder/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Rest Reminder";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -516,8 +521,9 @@
 				DEVELOPMENT_TEAM = Y7FQ6Q427M;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RestReminder/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Rest Reminder";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
