@@ -21,20 +21,14 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         presenter.preButtonsLogic(setupButton: setupButton, changeButton: changeButton, stopButton: stopButton)
         
-
-        
-      
-//        notificationCenter.delegate = self
-
-     
-       
+        presenter.userNotificationManager.notificationCenter.delegate = self
         
     }
-
-
+    
+    
     @IBAction func changeAction(_ sender: Any) {
         
         presenter.changeTapNotificationBehavior(lengthDate: lengthPicker.date, purityDate: purityPicker.date)
@@ -56,8 +50,8 @@ class MainViewController: UIViewController {
     
     
     
-    }
-    
+}
+
 
 
 

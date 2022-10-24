@@ -50,19 +50,24 @@ class UserNotificationManager: UserNotificationsManagerProtocol {
         
         let content = UNMutableNotificationContent()
         content.title = "Время отдохнуть"
-        content.body = "\(minute) минут(а) отдыха"
+        content.body = "Осталось \(minute) минут(а) отдыха"
         content.sound = UNNotificationSound.default
         
         
         
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: Double(secondsPurity), repeats: false)
         let request = UNNotificationRequest(identifier: "a", content: content, trigger: trigger)
-        
-        
-        
         notificationCenter.add(request)
-
-
+        
+        
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + Double(secondsPurity)) {
+            
+            let trigger2 = UNTimeIntervalNotificationTrigger(timeInterval: Double(secondsPurity + secondsLegth ), repeats: true)
+            let request2 = UNNotificationRequest(identifier: "a2", content: content, trigger: trigger2)
+            self.notificationCenter.add(request2)
+        }
+       
         
     }
     
@@ -93,6 +98,14 @@ class UserNotificationManager: UserNotificationsManagerProtocol {
         let request = UNNotificationRequest(identifier: "c", content: content, trigger: trigger)
         
         notificationCenter.add(request)
+        
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + Double(seconds) ) {
+            let trigger2 = UNTimeIntervalNotificationTrigger(timeInterval: Double(lengthSeconds), repeats: true)
+            let request2 = UNNotificationRequest(identifier: "c2", content: content, trigger: trigger)
+            
+            self.notificationCenter.add(request2)
+        }
         
       
     }
