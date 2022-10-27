@@ -49,7 +49,7 @@ class MainViewPresenter: MainViewPresenterProtocol {
             if request.first != nil {
                 DispatchQueue.main.async {
                     setupButton.isHidden = true
-                    stopButtonç.isHidden = false
+                    stopButton.isHidden = false
                     changeButton.isHidden = false
                 }
             }
