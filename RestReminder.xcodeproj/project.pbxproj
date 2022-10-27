@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0126C6D6290A906900FB0221 /* MainPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0126C6D5290A906900FB0221 /* MainPresenterTest.swift */; };
 		016730432904EC27003F9304 /* UserNotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016730422904EC27003F9304 /* UserNotificationsManager.swift */; };
 		0175721229033E6E0060041D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175721129033E6E0060041D /* AppDelegate.swift */; };
 		0175721429033E6E0060041D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175721329033E6E0060041D /* SceneDelegate.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0126C6D5290A906900FB0221 /* MainPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTest.swift; sourceTree = "<group>"; };
 		016730422904EC27003F9304 /* UserNotificationsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotificationsManager.swift; sourceTree = "<group>"; };
 		0175720E29033E6E0060041D /* RestReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0175721129033E6E0060041D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0126C6D2290A8FEA00FB0221 /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				0126C6D5290A906900FB0221 /* MainPresenterTest.swift */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
 		0175720529033E6E0060041D = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +133,7 @@
 		0175722A29033E700060041D /* RestReminderTests */ = {
 			isa = PBXGroup;
 			children = (
+				0126C6D2290A8FEA00FB0221 /* MainModule */,
 				0175722B29033E700060041D /* RestReminderTests.swift */,
 			);
 			path = RestReminderTests;
@@ -317,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0175722C29033E700060041D /* RestReminderTests.swift in Sources */,
+				0126C6D6290A906900FB0221 /* MainPresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
