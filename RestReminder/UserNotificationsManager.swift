@@ -113,6 +113,7 @@ class UserNotificationManager: UserNotificationsManagerProtocol {
     
     func cancelNotification() {
         notificationCenter.removeAllPendingNotificationRequests()
+        notificationCenter.removeAllDeliveredNotifications()
     }
     
 }

@@ -43,6 +43,17 @@ class MainViewPresenter: MainViewPresenterProtocol {
     func preButtonsLogic(setupButton: UIButton, changeButton: UIButton, stopButton: UIButton) {
         changeButton.isHidden = true
         stopButton.isHidden = true
+        
+        userNotificationManager.notificationCenter.getPendingNotificationRequests(completionHandler: { request in
+            
+            if request.first != nil {
+                DispatchQueue.main.async {
+                    setupButton.isHidden = true
+                    stopButtonç.isHidden = false
+                    changeButton.isHidden = false
+                }
+            }
+        })
     }
     
     
@@ -56,6 +67,7 @@ class MainViewPresenter: MainViewPresenterProtocol {
         setupButton.isHidden = true
         stopButton.isHidden = false
         changeButton.isHidden = false
+        
     }
     
     

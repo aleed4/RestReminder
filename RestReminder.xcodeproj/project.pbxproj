@@ -11,7 +11,6 @@
 		0175721229033E6E0060041D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175721129033E6E0060041D /* AppDelegate.swift */; };
 		0175721429033E6E0060041D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175721329033E6E0060041D /* SceneDelegate.swift */; };
 		0175721929033E6E0060041D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0175721729033E6E0060041D /* Main.storyboard */; };
-		0175721C29033E6E0060041D /* RestReminder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0175721A29033E6E0060041D /* RestReminder.xcdatamodeld */; };
 		0175721E29033E700060041D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0175721D29033E700060041D /* Assets.xcassets */; };
 		0175722129033E700060041D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0175721F29033E700060041D /* LaunchScreen.storyboard */; };
 		0175722C29033E700060041D /* RestReminderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175722B29033E700060041D /* RestReminderTests.swift */; };
@@ -46,7 +45,6 @@
 		0175721129033E6E0060041D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0175721329033E6E0060041D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0175721829033E6E0060041D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0175721B29033E6E0060041D /* RestReminder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RestReminder.xcdatamodel; sourceTree = "<group>"; };
 		0175721D29033E700060041D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0175722029033E700060041D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0175722229033E700060041D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 				0175721D29033E700060041D /* Assets.xcassets */,
 				0175721F29033E700060041D /* LaunchScreen.storyboard */,
 				0175722229033E700060041D /* Info.plist */,
-				0175721A29033E6E0060041D /* RestReminder.xcdatamodeld */,
 			);
 			path = RestReminder;
 			sourceTree = "<group>";
@@ -306,7 +303,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0175721C29033E6E0060041D /* RestReminder.xcdatamodeld in Sources */,
 				01757256290493030060041D /* MainViewPresenter.swift in Sources */,
 				0175724D290461690060041D /* AsselderModuleBuilder.swift in Sources */,
 				0175721229033E6E0060041D /* AppDelegate.swift in Sources */,
@@ -664,19 +660,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		0175721A29033E6E0060041D /* RestReminder.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				0175721B29033E6E0060041D /* RestReminder.xcdatamodel */,
-			);
-			currentVersion = 0175721B29033E6E0060041D /* RestReminder.xcdatamodel */;
-			path = RestReminder.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 0175720629033E6E0060041D /* Project object */;
 }
