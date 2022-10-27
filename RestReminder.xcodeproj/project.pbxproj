@@ -7,16 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0126C6D6290A906900FB0221 /* MainPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0126C6D5290A906900FB0221 /* MainPresenterTest.swift */; };
 		016730432904EC27003F9304 /* UserNotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016730422904EC27003F9304 /* UserNotificationsManager.swift */; };
 		0175721229033E6E0060041D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175721129033E6E0060041D /* AppDelegate.swift */; };
 		0175721429033E6E0060041D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175721329033E6E0060041D /* SceneDelegate.swift */; };
 		0175721929033E6E0060041D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0175721729033E6E0060041D /* Main.storyboard */; };
 		0175721E29033E700060041D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0175721D29033E700060041D /* Assets.xcassets */; };
 		0175722129033E700060041D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0175721F29033E700060041D /* LaunchScreen.storyboard */; };
-		0175722C29033E700060041D /* RestReminderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175722B29033E700060041D /* RestReminderTests.swift */; };
-		0175723629033E700060041D /* RestReminderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175723529033E700060041D /* RestReminderUITests.swift */; };
-		0175723829033E700060041D /* RestReminderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175723729033E700060041D /* RestReminderUITestsLaunchTests.swift */; };
 		0175724A290460D10060041D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01757248290460D10060041D /* MainViewController.swift */; };
 		0175724D290461690060041D /* AsselderModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175724C290461690060041D /* AsselderModuleBuilder.swift */; };
 		01757254290490A70060041D /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01757253290490A70060041D /* MainViewController.xib */; };
@@ -41,7 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0126C6D5290A906900FB0221 /* MainPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTest.swift; sourceTree = "<group>"; };
 		016730422904EC27003F9304 /* UserNotificationsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotificationsManager.swift; sourceTree = "<group>"; };
 		0175720E29033E6E0060041D /* RestReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0175721129033E6E0060041D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,10 +46,7 @@
 		0175722029033E700060041D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0175722229033E700060041D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0175722729033E700060041D /* RestReminderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestReminderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0175722B29033E700060041D /* RestReminderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestReminderTests.swift; sourceTree = "<group>"; };
 		0175723129033E700060041D /* RestReminderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestReminderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0175723529033E700060041D /* RestReminderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestReminderUITests.swift; sourceTree = "<group>"; };
-		0175723729033E700060041D /* RestReminderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestReminderUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		01757248290460D10060041D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0175724C290461690060041D /* AsselderModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsselderModuleBuilder.swift; sourceTree = "<group>"; };
 		01757253290490A70060041D /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
@@ -86,20 +78,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0126C6D2290A8FEA00FB0221 /* MainModule */ = {
-			isa = PBXGroup;
-			children = (
-				0126C6D5290A906900FB0221 /* MainPresenterTest.swift */,
-			);
-			path = MainModule;
-			sourceTree = "<group>";
-		};
 		0175720529033E6E0060041D = {
 			isa = PBXGroup;
 			children = (
 				0175721029033E6E0060041D /* RestReminder */,
-				0175722A29033E700060041D /* RestReminderTests */,
-				0175723429033E700060041D /* RestReminderUITests */,
 				0175720F29033E6E0060041D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -128,24 +110,6 @@
 				0175722229033E700060041D /* Info.plist */,
 			);
 			path = RestReminder;
-			sourceTree = "<group>";
-		};
-		0175722A29033E700060041D /* RestReminderTests */ = {
-			isa = PBXGroup;
-			children = (
-				0126C6D2290A8FEA00FB0221 /* MainModule */,
-				0175722B29033E700060041D /* RestReminderTests.swift */,
-			);
-			path = RestReminderTests;
-			sourceTree = "<group>";
-		};
-		0175723429033E700060041D /* RestReminderUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0175723529033E700060041D /* RestReminderUITests.swift */,
-				0175723729033E700060041D /* RestReminderUITestsLaunchTests.swift */,
-			);
-			path = RestReminderUITests;
 			sourceTree = "<group>";
 		};
 		01757244290460000060041D /* MainModule */ = {
@@ -327,8 +291,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0175722C29033E700060041D /* RestReminderTests.swift in Sources */,
-				0126C6D6290A906900FB0221 /* MainPresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,8 +298,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0175723829033E700060041D /* RestReminderUITestsLaunchTests.swift in Sources */,
-				0175723629033E700060041D /* RestReminderUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

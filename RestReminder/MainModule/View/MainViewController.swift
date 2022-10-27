@@ -26,13 +26,14 @@ class MainViewController: UIViewController {
         
         presenter.userNotificationManager.notificationCenter.delegate = self
         
+        
     }
     
     
     @IBAction func changeAction(_ sender: Any) {
         
         presenter.changeTapNotificationBehavior(lengthDate: lengthPicker.date, purityDate: purityPicker.date)
-        presenter.changeTapButtonsLogic(setupButton: setupButton, changeButton: changeButton, stopButton: stopButton)
+        presenter.changeTapButtonsLogic(changeButton: changeButton)
         
     }
     

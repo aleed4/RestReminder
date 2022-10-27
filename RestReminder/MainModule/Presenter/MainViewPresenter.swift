@@ -21,7 +21,7 @@ protocol MainViewPresenterProtocol: AnyObject {
     func setupTapNotificationBehavior(lengthDate: Date, purityDate: Date)
     func setupTapButtonsLogic(setupButton: UIButton, changeButton: UIButton, stopButton: UIButton)
     func changeTapNotificationBehavior(lengthDate: Date, purityDate: Date)
-    func changeTapButtonsLogic(setupButton: UIButton, changeButton: UIButton, stopButton: UIButton)
+    func changeTapButtonsLogic(changeButton: UIButton)
     func stopTapNotificationBehavior()
     func stopTapButtonsLogic(setupButton: UIButton, changeButton: UIButton, stopButton: UIButton)
     
@@ -63,7 +63,7 @@ class MainViewPresenter: MainViewPresenterProtocol {
     }
     
     func setupTapButtonsLogic(setupButton: UIButton, changeButton: UIButton, stopButton: UIButton) {
-
+        
         setupButton.isHidden = true
         stopButton.isHidden = false
         changeButton.isHidden = false
@@ -77,7 +77,7 @@ class MainViewPresenter: MainViewPresenterProtocol {
         userNotificationManager.sendEndRestNotifications(lengthDate: lengthDate, purityDate: purityDate)
         
     }
-    func changeTapButtonsLogic(setupButton: UIButton, changeButton: UIButton, stopButton: UIButton) {
+    func changeTapButtonsLogic(changeButton: UIButton) {
         
         DispatchQueue.main.async {
             UIButton.animate(withDuration: 0.8, animations: {
@@ -91,7 +91,7 @@ class MainViewPresenter: MainViewPresenterProtocol {
                 changeButton.backgroundColor = UIColor(hue: 0.6194, saturation: 0.37, brightness: 0.88, alpha: 1.0)
             }
         }
-       
+        
     }
     
     
