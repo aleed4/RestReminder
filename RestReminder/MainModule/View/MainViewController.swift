@@ -26,7 +26,9 @@ class MainViewController: UIViewController {
         
         presenter.userNotificationManager.notificationCenter.delegate = self
         
-        
+        changeButton.layer.cornerRadius = 10
+        setupButton.layer.cornerRadius = 10
+        stopButton.layer.cornerRadius = 10
     }
     
     
