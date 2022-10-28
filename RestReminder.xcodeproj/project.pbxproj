@@ -10,13 +10,13 @@
 		016730432904EC27003F9304 /* UserNotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016730422904EC27003F9304 /* UserNotificationsManager.swift */; };
 		0175721229033E6E0060041D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175721129033E6E0060041D /* AppDelegate.swift */; };
 		0175721429033E6E0060041D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175721329033E6E0060041D /* SceneDelegate.swift */; };
-		0175721929033E6E0060041D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0175721729033E6E0060041D /* Main.storyboard */; };
 		0175721E29033E700060041D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0175721D29033E700060041D /* Assets.xcassets */; };
 		0175722129033E700060041D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0175721F29033E700060041D /* LaunchScreen.storyboard */; };
 		0175724A290460D10060041D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01757248290460D10060041D /* MainViewController.swift */; };
 		0175724D290461690060041D /* AsselderModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0175724C290461690060041D /* AsselderModuleBuilder.swift */; };
 		01757254290490A70060041D /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01757253290490A70060041D /* MainViewController.xib */; };
 		01757256290493030060041D /* MainViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01757255290493030060041D /* MainViewPresenter.swift */; };
+		01E96E7A290B8305001BCC60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01E96E79290B8304001BCC60 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,6 @@
 		0175720E29033E6E0060041D /* RestReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0175721129033E6E0060041D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0175721329033E6E0060041D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0175721829033E6E0060041D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0175721D29033E700060041D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0175722029033E700060041D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0175722229033E700060041D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		0175724C290461690060041D /* AsselderModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsselderModuleBuilder.swift; sourceTree = "<group>"; };
 		01757253290490A70060041D /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		01757255290493030060041D /* MainViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewPresenter.swift; sourceTree = "<group>"; };
+		01E96E79290B8304001BCC60 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,9 +104,9 @@
 				0175724C290461690060041D /* AsselderModuleBuilder.swift */,
 				016730422904EC27003F9304 /* UserNotificationsManager.swift */,
 				01757244290460000060041D /* MainModule */,
-				0175721729033E6E0060041D /* Main.storyboard */,
 				0175721D29033E700060041D /* Assets.xcassets */,
 				0175721F29033E700060041D /* LaunchScreen.storyboard */,
+				01E96E79290B8304001BCC60 /* Main.storyboard */,
 				0175722229033E700060041D /* Info.plist */,
 			);
 			path = RestReminder;
@@ -252,8 +252,8 @@
 			files = (
 				0175722129033E700060041D /* LaunchScreen.storyboard in Resources */,
 				0175721E29033E700060041D /* Assets.xcassets in Resources */,
-				0175721929033E6E0060041D /* Main.storyboard in Resources */,
 				01757254290490A70060041D /* MainViewController.xib in Resources */,
+				01E96E7A290B8305001BCC60 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,14 +317,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0175721729033E6E0060041D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0175721829033E6E0060041D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0175721F29033E700060041D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
