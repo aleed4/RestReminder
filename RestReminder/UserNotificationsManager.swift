@@ -54,10 +54,12 @@ class UserNotificationManager: UserNotificationsManagerProtocol {
         content.sound = UNNotificationSound.default
         
         
-        
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: Double(secondsPurity), repeats: false)
-        let request = UNNotificationRequest(identifier: "a", content: content, trigger: trigger)
-        notificationCenter.add(request)
+        if minute != 0 {
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: Double(secondsPurity), repeats: false)
+            let request = UNNotificationRequest(identifier: "a", content: content, trigger: trigger)
+            notificationCenter.add(request)
+        }
+      
         
         
         
@@ -101,7 +103,7 @@ class UserNotificationManager: UserNotificationsManagerProtocol {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + Double(seconds) ) {
             let trigger2 = UNTimeIntervalNotificationTrigger(timeInterval: Double(lengthSeconds), repeats: true)
-            let request2 = UNNotificationRequest(identifier: "c2", content: content, trigger: trigger)
+            let request2 = UNNotificationRequest(identifier: "c2", content: content, trigger: trigger2)
             
             self.notificationCenter.add(request2)
         }

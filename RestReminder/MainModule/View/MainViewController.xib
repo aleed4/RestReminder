@@ -24,27 +24,32 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Длительность перерывов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0TX-sB-1lM">
-                    <rect key="frame" x="82" y="194" width="227" height="23"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Длительность перерывов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0TX-sB-1lM">
+                    <rect key="frame" x="71" y="189" width="227" height="23"/>
                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo2" translatesAutoresizingMaskIntoConstraints="NO" id="CbL-Mq-6RQ">
-                    <rect key="frame" x="146.66666666666666" y="51" width="81.666666666666657" height="74"/>
+                    <rect key="frame" x="147" y="47" width="81" height="74"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="74" id="Ei8-Xu-79G"/>
+                    </constraints>
                 </imageView>
-                <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="5" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwQ-3o-NX0">
-                    <rect key="frame" x="-5" y="234" width="375" height="76"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="5" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwQ-3o-NX0">
+                    <rect key="frame" x="-3" y="244" width="375" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="W8S-Lt-7pc"/>
+                    </constraints>
                 </datePicker>
-                <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="5" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UwY-fy-2Ug">
-                    <rect key="frame" x="0.0" y="367" width="375" height="46"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="5" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UwY-fy-2Ug">
+                    <rect key="frame" x="0.0" y="435" width="375" height="121"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="121" id="kmx-cS-303"/>
+                    </constraints>
                 </datePicker>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fk6-6s-Q4B">
-                    <rect key="frame" x="134" y="455" width="112" height="35"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fk6-6s-Q4B">
+                    <rect key="frame" x="136" y="603" width="103" height="35"/>
                     <color key="backgroundColor" red="0.50980395079999996" green="0.60392159219999997" blue="0.8078432083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Button"/>
@@ -53,16 +58,8 @@
                         <action selector="changeAction:" destination="-1" eventType="touchUpInside" id="gbp-AQ-YLE"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Частота перерывов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKc-EW-NPB">
-                    <rect key="frame" x="103" y="318" width="174" height="23"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSa-SD-oJ4">
-                    <rect key="frame" x="126" y="557" width="128" height="35"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSa-SD-oJ4">
+                    <rect key="frame" x="123" y="697" width="129" height="35"/>
                     <color key="backgroundColor" systemColor="systemRedColor"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Button"/>
@@ -71,9 +68,8 @@
                         <action selector="stopAction:" destination="-1" eventType="touchUpInside" id="yAi-oW-6dN"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QmB-eO-PD7">
-                    <rect key="frame" x="126" y="506" width="128" height="35"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QmB-eO-PD7">
+                    <rect key="frame" x="123" y="646" width="129" height="35"/>
                     <color key="backgroundColor" systemColor="systemGreenColor"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Button"/>
@@ -82,16 +78,39 @@
                         <action selector="setupAction:" destination="-1" eventType="touchUpInside" id="Pfa-ee-Epy"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Частота перерывов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKc-EW-NPB">
+                    <rect key="frame" x="100.66666666666669" y="395" width="174" height="23"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" red="0.035294117647058823" green="0.32156862745098036" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
-                <constraint firstItem="CbL-Mq-6RQ" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.0912322" id="7VQ-CK-a0C"/>
-                <constraint firstItem="CbL-Mq-6RQ" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="AB9-MA-6j4"/>
-                <constraint firstItem="CbL-Mq-6RQ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="4" id="YeX-qA-4Zm"/>
-                <constraint firstItem="CbL-Mq-6RQ" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.217949" id="kPm-SQ-1uj"/>
+                <constraint firstItem="MKc-EW-NPB" firstAttribute="top" secondItem="uwQ-3o-NX0" secondAttribute="bottom" constant="31" id="1WH-iV-6oX"/>
+                <constraint firstItem="UwY-fy-2Ug" firstAttribute="centerX" secondItem="KSa-SD-oJ4" secondAttribute="centerX" id="2nx-xh-ZgQ"/>
+                <constraint firstItem="UwY-fy-2Ug" firstAttribute="top" secondItem="MKc-EW-NPB" secondAttribute="bottom" constant="17" id="4bu-rG-sad"/>
+                <constraint firstItem="QmB-eO-PD7" firstAttribute="top" secondItem="fk6-6s-Q4B" secondAttribute="bottom" constant="8" id="7in-XD-gVS"/>
+                <constraint firstItem="KSa-SD-oJ4" firstAttribute="top" secondItem="QmB-eO-PD7" secondAttribute="bottom" constant="16" id="GQ3-P3-0Kg"/>
+                <constraint firstItem="UwY-fy-2Ug" firstAttribute="centerX" secondItem="CbL-Mq-6RQ" secondAttribute="centerX" id="Jpk-wc-IpH"/>
+                <constraint firstItem="UwY-fy-2Ug" firstAttribute="centerX" secondItem="MKc-EW-NPB" secondAttribute="centerX" id="OB7-DR-5K5"/>
+                <constraint firstItem="0TX-sB-1lM" firstAttribute="top" secondItem="CbL-Mq-6RQ" secondAttribute="bottom" constant="68" id="PcD-nc-h9w"/>
+                <constraint firstItem="QmB-eO-PD7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="123" id="Ucq-fS-7ri"/>
+                <constraint firstItem="UwY-fy-2Ug" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="UnC-BD-fVh"/>
+                <constraint firstItem="UwY-fy-2Ug" firstAttribute="centerX" secondItem="fk6-6s-Q4B" secondAttribute="centerX" id="YRT-PB-jYf"/>
+                <constraint firstItem="CbL-Mq-6RQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="147" id="ZkH-r6-QcU"/>
+                <constraint firstItem="QmB-eO-PD7" firstAttribute="leading" secondItem="KSa-SD-oJ4" secondAttribute="leading" id="apm-TI-Zcs"/>
+                <constraint firstAttribute="bottom" secondItem="UwY-fy-2Ug" secondAttribute="bottom" constant="256" id="cn5-VX-a0S"/>
+                <constraint firstItem="CbL-Mq-6RQ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="hmZ-y5-Lsj"/>
+                <constraint firstItem="fk6-6s-Q4B" firstAttribute="top" secondItem="UwY-fy-2Ug" secondAttribute="bottom" constant="47" id="jZj-Ub-iKa"/>
+                <constraint firstItem="UwY-fy-2Ug" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="oWX-SN-cEh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="uwQ-3o-NX0" secondAttribute="trailing" constant="3" id="qYY-YZ-hTF"/>
+                <constraint firstItem="uwQ-3o-NX0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="-3" id="tkY-GS-2PO"/>
+                <constraint firstItem="UwY-fy-2Ug" firstAttribute="centerX" secondItem="QmB-eO-PD7" secondAttribute="centerX" id="x0H-A6-Q51"/>
+                <constraint firstItem="uwQ-3o-NX0" firstAttribute="centerX" secondItem="0TX-sB-1lM" secondAttribute="centerX" id="zlA-Dp-xUz"/>
             </constraints>
-            <point key="canvasLocation" x="90.769230769230759" y="31.990521327014218"/>
+            <point key="canvasLocation" x="90.400000000000006" y="31.773399014778327"/>
         </view>
     </objects>
     <resources>

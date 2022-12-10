@@ -33,10 +33,8 @@ class MainViewController: UIViewController {
     
     
     @IBAction func changeAction(_ sender: Any) {
-        
         presenter.changeTapNotificationBehavior(lengthDate: lengthPicker.date, purityDate: purityPicker.date)
         presenter.changeTapButtonsLogic(changeButton: changeButton)
-        
     }
     
     
@@ -47,6 +45,8 @@ class MainViewController: UIViewController {
     
     
     @IBAction func stopAction(_ sender: Any) {
+        
+        
         presenter.stopTapNotificationBehavior()
         presenter.stopTapButtonsLogic(setupButton: setupButton, changeButton: changeButton, stopButton: stopButton)
     }
