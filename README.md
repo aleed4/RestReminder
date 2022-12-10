@@ -3,7 +3,7 @@ An app designed to remind you of breaks
 
 Project type: Study
 
-Tech Stack: MVP, UIKit
+Tech Stack: MVP, UIKit, UserDefaults
 
 
 ## Getting Started
