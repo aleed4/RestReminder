@@ -24,6 +24,7 @@ protocol MainViewPresenterProtocol: AnyObject {
     func changeTapButtonsLogic(changeButton: UIButton)
     func stopTapNotificationBehavior()
     func stopTapButtonsLogic(setupButton: UIButton, changeButton: UIButton, stopButton: UIButton)
+    func userDefaultsSave(lengthPickerDate: Date, purityPickerDate: Date)
     
 }
 
@@ -55,6 +56,17 @@ class MainViewPresenter: MainViewPresenterProtocol {
             }
         })
     }
+    
+    func loadUserDefaults() {
+        
+    }
+    
+    func userDefaultsSave(lengthPickerDate: Date, purityPickerDate: Date) {
+        
+        UserDefaults.standard.set(lengthPickerDate, forKey: "lPicker")
+        UserDefaults.standard.set(purityPickerDate, forKey: "pPicker")
+    }
+
     
     
     func setupTapNotificationBehavior(lengthDate: Date, purityDate: Date) {

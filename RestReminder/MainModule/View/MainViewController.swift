@@ -22,6 +22,11 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let defaults = UserDefaults.standard
+        lengthPicker.date = defaults.value(forKey: "lPicker") as? Date ?? lengthPicker.date
+        purityPicker.date = defaults.value(forKey: "pPicker") as? Date ?? purityPicker.date
+
+        
         presenter.preButtonsLogic(setupButton: setupButton, changeButton: changeButton, stopButton: stopButton)
         
         presenter.userNotificationManager.notificationCenter.delegate = self
@@ -33,12 +38,15 @@ class MainViewController: UIViewController {
     
     
     @IBAction func changeAction(_ sender: Any) {
+        presenter.userDefaultsSave(lengthPickerDate: lengthPicker.date, purityPickerDate: purityPicker.date)
         presenter.changeTapNotificationBehavior(lengthDate: lengthPicker.date, purityDate: purityPicker.date)
         presenter.changeTapButtonsLogic(changeButton: changeButton)
+        
     }
     
     
     @IBAction func setupAction(_ sender: Any) {
+        presenter.userDefaultsSave(lengthPickerDate: lengthPicker.date, purityPickerDate: purityPicker.date)
         presenter.setupTapNotificationBehavior(lengthDate: lengthPicker.date, purityDate: purityPicker.date)
         presenter.setupTapButtonsLogic(setupButton: setupButton, changeButton: changeButton, stopButton: stopButton)
     }
